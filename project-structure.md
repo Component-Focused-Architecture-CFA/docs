@@ -2,8 +2,16 @@
 This document explains how the project is organized, what lives where, and why the separation makes sense.
 
 ## Table of Contents
-
-
+- [📁 Structure Overview](#-structure-overview)
+- [📌 Folder Responsibilities](#-folder-responsibilities)
+  - [src/](#src)
+  - [src/ui/](#srcui)
+  - [src/features](#srcfeatures)
+  - [src/pages](#srcpages)
+- [📐 Hierarchy Rules](#-hierarchy-rules)
+- [🧩 Example: From Elements to Actions](#-example-from-elements-to-actions)
+- [🗂 Localized Folder Pattern](#-localized-folder-pattern)
+- [📄 File naming](#-file-naming)
 
 ## 📁 Structure Overview 
 Here’s a simplified view of the file tree to give you a feel for how everything is organized. 
@@ -132,10 +140,13 @@ All files and folders should follow the **kebab-case** naming convention for con
 
 - **Component files** should be named after the component: `button.tsx`, `modal.tsx`.
 - **Each component should have an `index.ts`** for easier imports:
+
     ✅ `import { Button } from "@/ui/components/button"` (instead of `button/button.tsx`)
 
 ### Importing Components
 
 This structure does not use barrel files (index.ts that re-export multiple modules). Instead, index.ts is only used inside component folders for cleaner imports, e.g.:
+
 ✅ `import { Button } from "@/ui/components/button"`
+
 ❌ `import { Button } from "@/ui/components"` (no barrel file grouping components together)
