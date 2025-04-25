@@ -3,7 +3,7 @@ This document explains how the project is organized, what lives where, and why t
 
 ## Table of Contents
 - [📁 Structure Overview](#-structure-overview)
-- [📌 Folder Responsibilities](#-folder-responsibilities)
+- [📌 Folder Responsibilities](#folder-responsibilities)
   - [src/](#src)
   - [src/ui/](#srcui)
   - [src/features](#srcfeatures)
@@ -11,7 +11,7 @@ This document explains how the project is organized, what lives where, and why t
 - [📐 Hierarchy Rules](#-hierarchy-rules)
 - [🧩 Example: From Elements to Actions](#-example-from-elements-to-actions)
 - [🗂 Localized Folder Pattern](#-localized-folder-pattern)
-- [📄 File naming](#-file-naming)
+- [📄 File naming](#file-naming)
 
 ## 📁 Structure Overview 
 Here’s a simplified view of the file tree to give you a feel for how everything is organized. 
